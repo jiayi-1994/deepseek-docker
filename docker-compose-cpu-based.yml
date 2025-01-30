@@ -1,5 +1,7 @@
 version: '3.4'
  
+#  README... Run WITH 
+#   docker compose -f 'docker-compose-cpu-based.yml' up -d --build 
 
 services:
     openwebui:
@@ -26,11 +28,4 @@ services:
             OLLAMA_HOST: 0.0.0.0
             OLLAMA_PORT: 11434
             OLLAMA_MODELS: 
-        #  To use only CPU, Just  comment the following line or remove it
-        deploy:
-          resources:
-            reservations:
-              devices:
-                - driver: nvidia
-                  count: all
-                  capabilities: [gpu]
+        
