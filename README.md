@@ -1,4 +1,4 @@
-# Welcome to EASY AI Docker WORLD!
+# EASY AI Docker!
   
 ---
 
