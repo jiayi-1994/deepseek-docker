@@ -12,7 +12,7 @@ services:
         volumes:
           - './open-webui:/app/backend/data'
         environment:
-            OLLAMA_BASE_URL: ollamadeepseek
+            OLLAMA_BASE_URL: http://ollamadeepseek:11434 
     ollamadeepseek: 
         build:
             context: .
