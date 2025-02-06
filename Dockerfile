@@ -2,7 +2,7 @@
 
 
 # Use a base image with CUDA support if using GPU, otherwise use Ubuntu
-FROM ubuntu:22.04
+FROM tensorflow/tensorflow:latest-gpu
 
 # Set non-interactive mode to avoid prompts during installation
 ENV DEBIAN_FRONTEND=noninteractive
