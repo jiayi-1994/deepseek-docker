@@ -21,7 +21,7 @@ RUN curl -fsSL https://ollama.com/install.sh | sh
 # Expose Ollama's default port (if needed)
 EXPOSE 11434
 
- 
+RUN ollama serve
 RUN ollama pull deepseek-r1
 # Pull Llama 3 model
 # RUN ollama pull llama3
