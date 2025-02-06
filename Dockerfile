@@ -22,6 +22,7 @@ RUN curl -fsSL https://ollama.com/install.sh | sh
 EXPOSE 11434
 
 RUN ollama serve &
+RUN sleep 5s
 RUN ollama pull deepseek-r1
 # Pull Llama 3 model
 # RUN ollama pull llama3
